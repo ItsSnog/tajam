@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>site</title>
+    <link href="styles/bootstrap.css" rel="stylesheet">
+    <link href="styles/main.css" rel="stylesheet">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script type="text/javascript">
+         $(document).ready(function(){
+            $("#abc").on("click","a", function (event) {
+                event.preventDefault();
+                var id  = $(this).attr('href'),
+                    top = $(id).offset().top;
+                $('body,html').animate({scrollTop: top}, 1500);
+            });
+        });
+    </script>
+  </head>
+  <body>
+   <header>
+    <div class="navbar navbar-invers navbar-static-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="navbar-brand">
+                    <div>
+                        <img src="img/logo.png" alt="" >
+                        <span class="">tajam</span>
+                    </div>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="nav navbar-nav navbar-right" id='abc'>
+                    <li><a href="#" class="active">home</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#expertise">expertise</a></li>
+                    <li><a href="#teams">teams</a></li>
+                    <li><a href="#works">works</a></li>
+                    <li><a href="#peoplesay">people say</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="carousel" class="carousel slide" data-ride='carousel'>
+            <ol class="carousel-indicators">
+                <li class="active" data-target="#carousel" data-slide-to="0"></li>
+                <li data-target="#carousel" data-slide-to="1"></li>
+                <li data-target="#carousel" data-slide-to="2"></li>
+            </ol>
+            <h1>We Are Awesome Creative Agency</h1>
+            <div class="liner"></div>
+            <div class="carousel-inner">
+                <div class="item active">
+                    <div class="caption">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis iusto distinctio accusamus. Ex deleniti itaque est placeat facilis quas accusamus, eius culpa quidem eaque soluta, voluptas sequi minima in quod.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="caption">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis iusto distinctio accusamus. Ex deleniti itaque est placeat facilis quas accusamus, eius culpa quidem eaque soluta, voluptas sequi minima in quod.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="caption">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis iusto distinctio accusamus. Ex deleniti itaque est placeat facilis quas accusamus, eius culpa quidem eaque soluta, voluptas sequi minima in quod.</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <br>
+            <p class="text-center"><a href="#" class="btn">LEARN MORE</a></p>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+       </div>
+    </header>
+    <section class="story" >
+       <div class="container" id="about">
+           <article class="row">
+               <div class="col-md-4 col-md-offset-1 col-xs-5">
+                   <img src="img/logo1.png" alt="">
+               </div>
+               <div class="col-md-7 col-xs-7">
+                   <h2>OUR STORY</h2>
+                   <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus
+                    </p>
+                   <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                   <a href="#" class="btn">LEARN MORE</a>
+               </div>
+           </article>
+       </div>
+       <section class="about_us_video">
+           <div class="bgvideo">
+                <video id="video" width="100%" height="100%" autoplay loop muted preload="auto">
+                    <source src="Passion%20about%20Programming.mp4"></source>
+                    <source src="Passion%20about%20Programming.webm" type="video/webm"></source>
+                </video>
+           </div>
+       </section>
+    </section>
+    <main class="page-content">
+        <section class="expertise" id="expertise">
+            <div class="text text-center">
+                <h2 class="h2">EXPERTISE</h2>
+                <p>Lorem ipsum dolor sit amet proin gravida nibh vel velit</p>
+            </div>
+            <div class="liner1 liner"></div>
+            <div class="container">
+                <div class="row page-row">
+                   <div class="col-sm-4 col-xs-12 col-md-4 text-center">
+                    <article class="item">
+                        <div class="img"><img src="img/item1.png" alt=""></div>
+                        <h4>WEB DESIGN & DEVELOPMENT</h4>
+                        <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh</p>
+                    </article>
+                   </div>
+                   <div class="col-sm-4 col-xs-12 col-md-4 text-center">
+                    <article class="item item-other">
+                        <div class="img"><img src="img/item2.png" alt=""></div>
+                        <h4>BRANDING IDENTITY</h4>
+                        <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh</p>
+                    </article>
+                   </div>
+                   <div class="col-sm-4 col-xs-12 col-md-4 text-center">
+                    <article class="item">
+                        <div class="img"><img src="img/item3.png" alt=""></div>
+                        <h4>MOBILE APP</h4>
+                        <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh</p>
+                    </article>
+                   </div>  
+                </div>
+                <div class="row">
+                   <div class="col-sm-4 col-xs-12 col-md-4 text-center">
+                    <article class="item">
+                        <div class="img"><img src="img/item4.png" alt=""></div>
+                        <h4>SEARCH ENGINE OPTIMIZATION</h4>
+                        <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh</p>
+                    </article>
+                   </div>
+                   <div class="col-sm-4 col-xs-12 col-md-4 text-center">
+                    <article class="item item-other">
+                        <div class="img"><img src="img/item5.png" alt=""></div>
+                        <h4>GAME DEVELOPMENT</h4>
+                        <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh</p>
+                    </article>
+                   </div>
+                   <div class="col-sm-4 col-xs-12 col-md-4 text-center">
+                    <article class="item">
+                        <div class="img"><img src="img/item6.png" alt=""></div>
+                        <h4>MADE WITH LOVE</h4>
+                        <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh</p>
+                    </article>
+                   </div>  
+                </div>
+            </div>
+        </section>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <section class="about_team" id="teams">
+            <div class="container text-center">
+                <div class="pages-header">
+                    <h4>MEET OUR AMAZING TEAM</h4>
+                    <p>Lorem ipsum dolor sit amet proin gravida nibh vel velit</p>
+                </div>
+                 <div class="liner2 liner"></div>
+                <div class="row">
+                    <div class="col-md-3 col-xs-6">
+                        <div class="card">
+                            <div class="img">
+                                <img src="http://lorempixel.com/output/people-h-c-150-200-7.jpg" alt="">
+                            </div>
+                            <div class="about_card">
+                                <div class="name">SEMF UCUK</div>
+                                <div class="player-title">
+                                    CEO & FOUNDER
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <div class="card">
+                            <div class="img">
+                                <img src="http://lorempixel.com/output/people-h-c-150-200-7.jpg" alt="">
+                            </div>
+                            <div class="about_card">
+                                <div class="name">DIK ADALIN</div>
+                                <div class="player-title">
+                                    ENGINEERING
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <div class="card">
+                            <div class="img">
+                                <img src="http://lorempixel.com/output/people-h-c-150-200-7.jpg" alt="">
+                            </div>
+                            <div class="about_card">
+                                <div class="name">PET ROMAK</div>
+                                <div class="player-title">
+                                   MARKETING
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <div class="card">
+                            <div class="img">
+                                <img src="http://lorempixel.com/output/people-h-c-150-200-7.jpg" alt="">
+                            </div>
+                            <div class="about_card">
+                                <div class="name">SEMF UCUK</div>
+                                <div class="player-title">
+                                    CEO & FOUNDER
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+                <div class="footer">
+                    <h4>Become part of our dream team, let’s join us ! </h4>
+                    <p class="text-center"><a href="#" class="btn">LEARN MORE</a></p>
+                </div>
+            </div>
+        </section>
+        <section class="our_work" id="works">
+          <div class="container">
+           <div class="works">
+               OUR WORKS
+           </div>
+           <div class="other_works">
+               <a href="#">See All Project in dribbble &gt;</a>
+           </div>
+           <div class="clear"></div>
+           </div>
+           <table class="works_item">
+               <tr>
+                   <td><img src="http://lorempixel.com/output/abstract-h-g-150-200-10.jpg" alt=""></td>
+                   <td><img src="http://lorempixel.com/output/nightlife-h-g-150-200-1.jpg" alt=""></td>
+                   <td><img src="http://lorempixel.com/output/sports-h-g-150-200-4.jpg" alt=""></td>
+                   <td><img src="http://lorempixel.com/output/technics-h-g-150-200-10.jpg" alt=""></td>
+                   <td><img src="http://lorempixel.com/output/city-h-g-150-200-3.jpg" alt=""></td>
+                   <td><img src="http://lorempixel.com/output/technics-h-g-150-200-9.jpg" alt=""></td>
+               </tr>
+               <tr>
+                   <td><img src="http://lorempixel.com/output/transport-h-c-150-200-6.jpg" alt=""></td>
+                   <td><img src="http://lorempixel.com/output/fashion-h-c-150-200-8.jpg" alt=""></td>
+                   <td><img src="http://lorempixel.com/output/abstract-h-c-150-200-5.jpg" alt=""></td>
+                   <td><img src="http://lorempixel.com/output/fashion-h-c-150-200-5.jpg" alt=""></td>
+                   <td><img src="http://lorempixel.com/output/people-h-c-150-200-10.jpg" alt=""></td>
+                   <td><img src="http://lorempixel.com/output/transport-h-c-150-200-5.jpg" alt=""></td>
+               </tr>
+           </table>
+           <br>
+            <p class="text-center"><a href="#" class="btn">LOAD MORE</a></p>
+        </section>
+        <section class="blockquota" id="peoplesay">
+                <div id="carousel" class="carousel slide" data-ride='carousel'>
+                <h1>&ldquo;</h1>
+                    <ol class="carousel-indicators">
+                        <li class="active" data-target="#carousel" data-slide-to="0"></li>
+                        <li data-target="#carousel" data-slide-to="1"></li>
+                        <li data-target="#carousel" data-slide-to="2"></li>
+                        <li data-target="#carousel" data-slide-to="3"></li>
+                        <li data-target="#carousel" data-slide-to="4"></li>
+                    </ol>
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <div class="caption">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis iusto distinctio accusamus. Ex deleniti itaque est placeat facilis quas accusamus, eius culpa quidem eaque soluta, voluptas sequi minima in quod.</p>
+                            <h4>JANE GALADRIEL</h4>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="caption">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis iusto distinctio accusamus. Ex deleniti itaque est placeat facilis quas accusamus, eius culpa quidem eaque soluta, voluptas sequi minima in quod.</p>
+                            <h4>JANE GALADRIEL</h4>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="caption">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis iusto distinctio accusamus. Ex deleniti itaque est placeat facilis quas accusamus, eius culpa quidem eaque soluta, voluptas sequi minima in quod.</p>
+                            <h4>JANE GALADRIEL</h4>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="caption">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis iusto distinctio accusamus. Ex deleniti itaque est placeat facilis quas accusamus, eius culpa quidem eaque soluta, voluptas sequi minima in quod.</p>
+                            <h4>JANE GALADRIEL</h4>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="caption">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis iusto distinctio accusamus. Ex deleniti itaque est placeat facilis quas accusamus, eius culpa quidem eaque soluta, voluptas sequi minima in quod.</p>
+                            <h4>JANE GAKEL</h4>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+           </div>
+        </section>
+        <section class="contact" id="contact">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-md-6 col-sm-5">
+                        <h1>GIVE US A GOOD NEWS</h1>
+                        <form class="contact-form">
+                            <div class="form-group">
+                                <input type="text" placeholder="Name">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="Email">
+                            </div>
+                            <div class="form-gruop">
+                                <input type="text" placeholder="Subject"></div>
+                                <br>
+                            <div class="form-gruop">
+                                <textarea cols="30" rows="10" placeholder="You message"></textarea>
+                            </div>
+                            <div class="form-gruop">
+                                <input type="button" class="btn" name="SUBMIT" value='SUBMIT'>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-6 col-sm-7">
+                        <h1>OUR HEPPY CLIENT</h1>
+                        <div class="row">
+                            <div class="col-md-6 col-xs-6">
+                                <img src="img/contact1.png" alt="">
+                            </div>
+                            <div class="col-md-6 col-xs-6">
+                                <img src="img/contact2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-xs-6">
+                                <img src="img/contact3.png" alt="">
+                            </div>
+                            <div class="col-md-6 col-xs-6">
+                                <img src="img/contact4.png" alt="">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-xs-6">
+                                <img src="img/contact5.png" alt="">
+                            </div>
+                            <div class="col-md-6 col-xs-6">
+                                <img src="img/contact1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-xs-6">
+                                <img src="img/contact2.png" alt="">
+                            </div>
+                            <div class="col-md-6 col-xs-6">
+                                <img src="img/contact3.png" alt="">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-xs-6">
+                                <img src="img/contact4.png" alt="">
+                            </div>
+                            <div class="col-md-6 col-xs-6">
+                                <img src="img/contact2.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-left">
+            <div class="navbar-brand">
+                <div class='text-center'>
+                    <img src="img/logo.png" alt="" >
+                    <span class="">tajam</span>
+                </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio consequatur cum illum officia necessitatibus! Laudantium, quae enim vitae totam veniam odio, quidem aliquam magnam quam soluta quibusdam nesciunt voluptas, error.</p>
+        </div>
+        <div class="footer-right">
+            <h4>OUR STUDIO</h4>
+            <p>Ruko cucruk, Jl. Radio luar dalem jos No.12 - 13, Kalideres - J</p>
+            <p>(+62) 21-2224 3333</p>
+        </div>
+        <div class="copy">
+            <ul>
+                <li><a href="#">HELP</a></li>
+                <li><a href="#">TERMS & CONDITION</a></li>
+                <li><a href="#">PRIVACY</a></li>
+            </ul>
+        </div>
+    </footer>
+    
+    <script src="scripts/bootstrap.js"></script>
+  </body>
+</html>

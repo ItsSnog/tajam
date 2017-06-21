@@ -1,0 +1,260 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+header {
+    background: url('Header.jpg');
+    background-size: 100% 100%;
+}
+.navbar-invers .navbar-toggle .icon-bar {
+    background-color: white;
+}
+.navbar-invers .navbar-toggle > span:focus {
+    background-color: #00e0d0;
+}
+header ul li a {
+    color: white;
+    text-transform: uppercase;
+}
+header ul li a:hover {
+    color: #00e0d0;
+}
+.nav > li > a:hover, .nav > li > a:focus {
+    background: none!important;
+}
+.nav > li > a {
+    font-weight: 600;
+}
+.navbar-brand {
+    height: 70px!important;
+}
+.navbar-header span {
+    font-size: 1.4em;
+    color: #37b3cd;
+}
+.carousel-inner > .item {
+    text-align: center;
+}
+.carousel h1 {
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 30px;
+    padding-top: 50px;
+}
+.liner {
+    width: 50px;
+    height: 1px;
+    background-color: #00e0d0;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+.liner1 {
+    background-color: #a29e9e;
+    margin-bottom: 100px;
+}
+.page-content .text p {
+    color: #a29e9e;
+}
+.caption p {
+    width: 50%;
+    margin:  0 auto;
+    color: white;
+}
+.item .caption .btn {
+    border-color: 1px solid #00e0d0;
+}
+.bgvideo {
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+}
+.page-content .page-row {
+    border-bottom: 1px solid #e4e4e4;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+}
+.container h4 {
+    font-weight: 600;
+    font-size: 1.1em;
+}
+.item-other {
+    border-left: 1px solid #e4e4e4;
+    border-right: 1px solid #e4e4e4;
+}
+.about_team {
+    background: url('../img/Header.jpg') center no-repeat;
+    background-size: 100% 100%;
+}
+.pages-header {
+    margin-top: 50px;
+}
+.pages-header h4{
+    color: #ffffff;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+.pages-header p{
+    color:  #a7a3b2;
+}
+.liner2 {
+    background-color: #655c80;
+}
+.name {
+    color: white;
+    font-weight: 600;
+    margin: 5px 0;
+}
+.player-title {
+    font-size: 0.8em;
+    color: #b0b0b8;
+}
+.about_card {
+    border: 1px solid #b0b0b8;
+    width: 150px;
+    margin: 0 auto 20px;
+}
+.footer h4 {
+    margin-top: 100px;
+    color: #c9c9ce;
+}
+.our_work .works {
+    float: left;
+}
+.our_work .other_works {
+    float: right;
+}
+.clear {
+    clear: both;
+}
+.container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 1.2em;
+    font-family:sans-serif;
+}
+.works {
+    color: #413d4b;
+    font-weight: 600;
+}
+.other_works a {
+    color: black;
+    font-size: 0.8em;
+}
+.works_item {
+    width: 100%;
+}
+.works_item img {
+    width: 100%;
+}
+.blockquota {
+    background: url(../img/background.jpg) center no-repeat;
+    background-size: 100% 100%;
+}
+.blockquota h4 {
+    color: white;
+}
+.blockquota h1 {
+    font-size: 6em;
+    margin-bottom: 0;
+}
+.blockquota .carousel-indicators > .active {
+    width: 60px;
+    height: 60px;
+}
+
+.blockquota .carousel-indicators > li{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.blockquota .carousel-indicators > li:nth-child(1){
+    background: url(../img/quote2.jpg)
+}
+.blockquota .carousel-indicators > li:nth-child(2){
+    background: url(../img/quote1.jpg);
+}
+.blockquota .carousel-indicators > li:nth-child(3){
+    background: url(../img/quote3.jpg)
+}
+.blockquota .carousel-indicators > li:nth-child(4){
+    background: url(../img/quote4.jpg)
+}
+.blockquota .carousel-indicators > li:nth-child(5){
+    background: url(../img/quote5.jpg)
+}
+.contact .row .row {
+    margin: 30px 20px;;
+}
+.btn {
+    background: none;
+}
+footer {
+    
+    background: url('../img/footer.png');
+    background-size: 100% 100%;
+}
+footer div {
+    width: 50%;
+footer > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+    min-width: 300px;
+}
+.footer-left {
+    color: white;
+     width: 300px;
+    display: flex;
+    flex-wrap: wrap
+}
+.footer-left span {
+    color: #11626c;
+    font-size: 1.4em;
+}
+.footer-right {
+    color: white;
+     width: 300px;
+    display: flex;
+    flex-wrap: wrap
+}
+.footer-right h4 {
+    line-height: 50px;
+}
+.copy {
+    display: block;
+    width: 100%;
+}
+.copy ul li {
+    display: inline-block;
+    margin: 0 14px;
+}
+.copy ul li a {
+    color: white;
+}
+input {
+    padding: 10px;
+}
+textarea {
+    padding: 10px;
+}
